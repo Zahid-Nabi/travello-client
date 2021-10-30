@@ -1,0 +1,22 @@
+.logo {
+    width: 150px;
+    max-width: 100%;
+}
+.navbar {
+    background: rgb(255,255,255);
+    box-shadow: 2px 0px 5px gray;
+}
+.navbar-nav .nav-link {
+    color: var(--primary);
+    font-weight: 600;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--secondary);
+}
+.navbar-toggler {
+    border-color: var(--primary);
+}
+.navbar-toggler-icon {
+    color: var(--primary);
+    font-size: 25px;
+}
