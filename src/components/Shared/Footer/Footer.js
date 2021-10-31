@@ -16,19 +16,19 @@ const Footer = () => {
 
                         <div className="col text-center px-5 py-3 footer-links">
                             <h5 className="footer-title">Learn More</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">What’s New</li>
-                                <li class="list-group-item">About Us</li>
-                                <li class="list-group-item">Terms and Conditions</li>
-                                <li class="list-group-item">Privacy Policy</li>
-                                <li class="list-group-item">FAQ</li>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">What’s New</li>
+                                <li className="list-group-item">About Us</li>
+                                <li className="list-group-item">Terms and Conditions</li>
+                                <li className="list-group-item">Privacy Policy</li>
+                                <li className="list-group-item">FAQ</li>
                             </ul>
                         </div>
 
                         <div className="col text-center p-3 contact-us">
                             <h5 className="footer-title">Contact Us</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex">
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item d-flex">
                                     <span className="icon"><FaMapMarkerAlt /></span>
                                     <span className="address">
                                         27 Main Street, Suite 17,<br />
@@ -36,13 +36,13 @@ const Footer = () => {
                                         Bangladesh.
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex">
+                                <li className="list-group-item d-flex">
                                     <span className="icon"><FaPhone /></span>
                                     <span className="phone">
                                         +880 1737 95 11 02
                                     </span>
                                 </li>
-                                <li class="list-group-item email">
+                                <li className="list-group-item email">
                                     <span className="icon"><FaEnvelope /></span>
                                     <span className="email">
                                         jobaidunnabi@gmail.com
@@ -54,13 +54,13 @@ const Footer = () => {
                         </div>
                         <div className="col p-3">
                             <h5 className="footer-title">Newsletter</h5>
-                            <form class="row gx-3 gy-2 align-items-center">
-                                <div class="col-sm-12">
+                            <form className="row gx-3 gy-2 align-items-center">
+                                <div className="col-sm-12">
 
-                                    <input type="email" class="form-control" id="specificSizeInputName" placeholder="Enter your email" />
+                                    <input type="email" className="form-control" id="specificSizeInputName" placeholder="Enter your email" />
                                 </div>
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                <div className="col-auto">
+                                    <button type="submit" className="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

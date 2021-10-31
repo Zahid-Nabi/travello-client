@@ -1,0 +1,7 @@
+.add-package {
+    background: radial-gradient(circle, rgba(0,209,202,1) 0%, rgba(0,142,209,1) 39%, rgba(113,69,155,1) 100%);
+}
+
+.add-package label {
+    color: #fff;
+}

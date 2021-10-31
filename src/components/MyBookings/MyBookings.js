@@ -28,7 +28,7 @@ const MyBookings = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-9 mx-auto">
-                        <h3 className="text-center">My Bookings</h3>
+                        <h3 className="text-center mb-4">My Bookings</h3>
                         {
                             myBookings.map(myBooking => (
                                 <div key={myBooking._id} className="card mb-3">
