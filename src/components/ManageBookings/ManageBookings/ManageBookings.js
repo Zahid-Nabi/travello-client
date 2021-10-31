@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaCalendarAlt, FaUserAlt } from 'react-icons/fa';
 
 const ManageBookings = () => {
     const [allBookings, setAllBookings] = useState([]);
@@ -47,7 +48,7 @@ const ManageBookings = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-9 mx-auto">
-                        <h3 className="text-center">Manage All Bookings</h3>
+                        <h3 className="text-center mb-5">Manage All Bookings</h3>
                         {
                             allBookings.map(booking => (
                                 <div key={booking._id} className="card mb-3">
@@ -58,8 +59,26 @@ const ManageBookings = () => {
                                         <div className="col-md-8">
                                             <div className="card-body">
                                                 <h5 className="card-title">{booking.packageName}</h5>
-                                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div className="card-text">
+                                                    <div className="card-info d-flex justify-content-between">
+                                                        <p>
+                                                            <FaUserAlt className="me-2 mb-1" />
+                                                            {booking.name}
+                                                            {' '}
+                                                            ({booking.email})
+                                                        </p>
+                                                        <p>
+                                                            <FaCalendarAlt className="me-2 mb-1" />
+                                                            {booking.date}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                                 <p className="card-text"><small className="text-muted">Status: {booking.status}</small></p>
+                                                <p className="card-text">
+                                                    <small className="text-muted">
+                                                        Members: {booking.member}
+                                                    </small>
+                                                </p>
                                             </div>
                                             <div>
                                                 <button

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
+import { FaCalendarAlt, FaUserAlt } from 'react-icons/fa';
 
 const MyBookings = () => {
     const [myBookings, setMyBookings] = useState([]);
@@ -38,9 +39,29 @@ const MyBookings = () => {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="card-body">
-                                                <h5 className="card-title">{myBooking.packageName}</h5>
-                                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                <p className="card-text"><small className="text-muted">Status: {myBooking.status}</small></p>
+                                                <h5 className="card-title text-primary">{myBooking.packageName}</h5>
+                                                <div className="card-text">
+                                                    <div className="card-info d-flex justify-content-between">
+                                                        <p>
+                                                            <FaUserAlt className="me-2 mb-1" />
+                                                            {myBooking.name}
+                                                        </p>
+                                                        <p>
+                                                            <FaCalendarAlt className="me-2 mb-1" />
+                                                            {myBooking.date}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p className="card-text">
+                                                    <small className="text-muted">
+                                                        Status: {myBooking.status}
+                                                    </small>
+                                                </p>
+                                                <p className="card-text">
+                                                    <small className="text-muted">
+                                                        Members: {myBooking.member}
+                                                    </small>
+                                                </p>
                                             </div>
                                             <div>
                                                 <button onClick={() => handleDelete(myBooking._id)} className="btn btn-danger m-3">Delete</button>

@@ -1,0 +1,9 @@
+.not-found {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, rgba(0,209,202,1) 0%, rgba(0,142,209,1) 39%, rgba(113,69,155,1) 100%);
+}
