@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
 
                         <div className="col p-3">
-                            <img className="w-75 mb-3" src="https://i.ibb.co/nggRfp6/travello-logo.png" alt="" />
+                            <img className="w-75 mb-3 footer-logo" src="https://i.ibb.co/nggRfp6/travello-logo.png" alt="" />
                             <p>We believe sustainable tourism matters. Travello Cares is our commitment to preserving the planet, wildlife and giving back to communities for generations to come.</p>
                         </div>
 

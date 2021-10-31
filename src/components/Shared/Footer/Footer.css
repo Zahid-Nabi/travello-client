@@ -2,6 +2,9 @@
     background: linear-gradient(rgba(216, 246, 246, 0.9), rgba(216, 246, 246, 0.8)), url('https://images.pexels.com/photos/6439051/pexels-photo-6439051.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat fixed center center / cover;
     padding: 20px 0;
 }
+.footer-logo {
+    max-width: 100%;
+}
 .footer-title {
     margin-bottom: 25px;
     text-transform: uppercase;
